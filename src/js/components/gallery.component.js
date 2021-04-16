@@ -40,7 +40,7 @@ const Gallery = props => {
       };
     useEffect(()=>{
         
-            fetch(`https://api.unsplash.com/photos/?client_id=${ACCESS_KEY}&page=${Math.round(Math.random()*5)}&per_page=20`)
+            fetch(`https://api.unsplash.com/photos/?client_id=${ACCESS_KEY}&page=${Math.round(Math.random()*5)}&per_page=30`)
             .then(response => response.json())
             .then(data => {
                 console.log(data);

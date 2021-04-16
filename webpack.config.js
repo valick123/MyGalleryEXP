@@ -55,7 +55,7 @@ const babelOptions = (preset)=>{
 
 module.exports= {
     entry:{
-        index:['@babel/polyfill','./src/js/index.js']
+        index:['./src/js/index.js'] //'@babel/polyfill',
     },
     output:{
         filename:fileName('js'),
@@ -66,8 +66,8 @@ module.exports= {
         port:4001,
         hot: isDev,
         historyApiFallback: true,
-        disableHostCheck:true,
-        host:"192.168.130.43"
+        // disableHostCheck:true,
+        host:"192.168.130.43",
     },
     plugins:[
         new HTMLWebpackPlugin({
